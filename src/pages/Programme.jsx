@@ -28,15 +28,14 @@ export const Programme = () => {
 
       </div>
 
-      {/* FILTER */}
       <div className="bg-yellow-400 text-center py-2 rounded mb-12 font-medium max-w-md mx-auto">
         All Artists
       </div>
 
-      {/* ARTISTS */}
+    
       <div className="flex justify-center gap-10 flex-wrap">
 
-        {/* CARD 1 */}
+      
         <div className="bg-[#0D1B3D] w-56 h-80 rounded-3xl p-6 text-center text-white relative hover:scale-105 transition duration-500 cursor-pointer shadow-lg">
 
           <img
