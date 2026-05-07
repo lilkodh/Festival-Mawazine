@@ -1,3 +1,4 @@
+import image2 from "../assets/weekend.png";
 export const Programme = () =>{
     return(
         <div className="bg-white min-h-screen p-4">
@@ -35,7 +36,7 @@ export const Programme = () =>{
 
           <div className="flex items-center gap-3">
             <img
-              src="/weeknd.png"
+              src={image2}
               alt="artist"
               className="w-8 h-8 rounded-full"
             />
@@ -51,7 +52,7 @@ export const Programme = () =>{
 
           <div className="flex items-center gap-3">
             <img
-              src="/weeknd.png"
+              src={image2}
               alt="artist"
               className="w-8 h-8 rounded-full"
             />
@@ -68,7 +69,7 @@ export const Programme = () =>{
 
           <div className="flex items-center gap-3">
             <img
-              src="/weeknd.png"
+              src={image2}
               alt="artist"
               className="w-8 h-8 rounded-full"
             />
@@ -85,7 +86,7 @@ export const Programme = () =>{
 
           <div className="flex items-center gap-3">
             <img
-              src="/weeknd.png"
+              src={image2}
               alt="artist"
               className="w-8 h-8 rounded-full"
             />
