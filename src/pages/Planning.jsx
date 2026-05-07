@@ -1,81 +1,80 @@
 import image2 from "../assets/weekend.png";
-export const Planning = () => {
-    return(
-       <div className="bg-white min-h-screen p-4">
 
-      <div className="bg-yellow-400 w-130 text-center py-1 rounded mb-20">
-        <h1 className="text-3xl">My Planing </h1>
+export const Planning = () => {
+  return (
+    <div className="bg-white min-h-screen p-4">
+
+
+      <div className="bg-yellow-400 w-72 rounded mb-16 py-2">
+        <h1 className="text-3xl font-bold text-center">
+          My Planing
+        </h1>
       </div>
 
-      <div className="space-y-6">
-        <div className="border-b border-gray-400 pb-4 flex items-center justify-between">
+      <div className="flex justify-center gap-8 flex-wrap">
 
-          <div className="flex items-center gap-3">
-            <img
-              src={image2}
-              alt="artist"
-              className="w-10 h-10 rounded-full"
-            />
+ 
+        <div className="bg-[#0D1B3D] w-52 h-96 rounded-3xl relative text-center hover:scale-105 transition duration-500 shadow-xl">
 
-            <h2 className="text-2xl font-bold">
+          <div className="bg-white rounded-full w-40 mx-auto mt-4 py-1">
+            <h2 className="text-yellow-400 font-bold">
               The Weekand
             </h2>
           </div>
 
-          <p className="text-3xl">21:30</p>
+          <img
+            src={image2}
+            alt="artist"
+            className="w-24 h-24 rounded-full border-4 border-yellow-400 mx-auto mt-16"
+          />
+
+ 
+          <button className="bg-yellow-400 w-40 py-2 rounded-full absolute bottom-6 left-1/2 -translate-x-1/2 font-bold hover:bg-yellow-300 transition duration-500">
+            -REMOVE
+          </button>
         </div>
 
-        <div className="border-b border-gray-400 pb-4 flex items-center justify-between">
 
-          <div className="flex items-center gap-4">
-            <img
-              src={image2}
-              alt="artist"
-              className="w-10 h-10 rounded-full"
-            />
+        <div className="bg-[#0D1B3D] w-52 h-96 rounded-3xl relative text-center hover:scale-105 transition duration-500 shadow-xl">
 
-            <h2 className="text-2xl font-bold">
-              Dua Lipa
+          <div className="bg-white rounded-full w-40 mx-auto mt-4 py-1">
+            <h2 className="text-yellow-400 font-bold">
+              The Weekand
             </h2>
           </div>
 
-          <p className="text-3xl">21:10</p>
+          <img
+            src={image2}
+            alt="artist"
+            className="w-24 h-24 rounded-full border-4 border-yellow-400 mx-auto mt-16"
+          />
+
+          <button className="bg-yellow-400 w-40 py-2 rounded-full absolute bottom-6 left-1/2 -translate-x-1/2 font-bold hover:bg-yellow-300 transition duration-500">
+            -REMOVE
+          </button>
         </div>
 
-        <div className="border-b border-gray-400 pb-4 flex items-center justify-between">
 
-          <div className="flex items-center gap-4">
-            <img
-              src={image2}
-              alt="artist"
-              className="w-10 h-10 rounded-full"
-            />
+        <div className="bg-[#0D1B3D] w-52 h-96 rounded-3xl relative text-center hover:scale-105 transition duration-500 shadow-xl">
 
-            <h2 className="text-2xl font-bold">
-              TOTO
+          <div className="bg-white rounded-full w-40 mx-auto mt-4 py-1">
+            <h2 className="text-yellow-400 font-bold">
+              The Weekand
             </h2>
           </div>
 
-          <p className="text-3xl">21:30</p>
-        </div>
-        <div className="border-b border-gray-400 pb-4 flex items-center justify-between">
+          <img
+            src={image2}
+            alt="artist"
+            className="w-24 h-24 rounded-full border-4 border-yellow-400 mx-auto mt-16"
+          />
 
-          <div className="flex items-center gap-4">
-            <img
-              src={image2}
-              alt="artist"
-              className="w-10 h-10 rounded-full"
-            />
-
-            <h2 className="text-xl font-bold">
-              Saad Lmjarad
-            </h2>
-          </div>
-
-          <p className="text-3xl">21:30</p>
+          <button className="bg-yellow-400 w-40 py-2 rounded-full absolute bottom-6 left-1/2 -translate-x-1/2 font-bold hover:bg-yellow-300 transition duration-500">
+            -REMOVE
+          </button>
         </div>
 
       </div>
     </div>
-    );
-}
+  );
+};

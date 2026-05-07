@@ -26,7 +26,7 @@ export const Home = () => {
             <span className="text-2xl ">🔔</span > Next Concert
           </h2>
 
-          <div className="bg-[#0b132b] rounded-[60px] p-10 h-100 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="bg-[#0b132b] rounded-[60px] p-10 h-100 flex flex-col md:flex-row items-center justify-between gap-6 hover:scale-105 transition duration-500 shadow-xl">
 
             <div className="flex items-center gap-10 ">
               
@@ -50,10 +50,10 @@ export const Home = () => {
             </div>
 
             <div className="flex flex-col gap-20 min-w-[200px]">
-              <button className="bg-[#e5b84b] text-black font-bold px-4 py-2.5 rounded-full text-xs shadow hover:bg-yellow-500 transition">
+              <button className="bg-[#e5b84b] text-black font-bold px-4 py-2.5 rounded-full text-xs shadow hover:scale-105 transition duration-500 shadow-xl">
                 + Add To Planning
               </button>
-              <button className="bg-white text-black font-bold px-4 py-2.5 rounded-full text-xs shadow hover:bg-gray-100 transition">
+              <button className="bg-white text-black font-bold px-4 py-2.5 rounded-full text-xs shadow hover:scale-105 transition duration-500 shadow-xl">
                 I was There
               </button>
             </div>

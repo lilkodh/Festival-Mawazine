@@ -13,7 +13,7 @@ export  const Artistdetails = () => {
             />
 
             <div>
-              <h1 className="text-2xl font-bold mb-4">
+              <h1 className="text-5xl font-bold mb-5 ">
                 The Weekend
               </h1>
 
@@ -21,12 +21,12 @@ export  const Artistdetails = () => {
                 📍 Olm Souissi
               </p>
 
-              <p className="text-sm">
+              <p className="text-sm ">
                 ⏰ 21:30
               </p>
             </div>
           </div>
-          <p className="text-xs leading-5 text-gray-300 mb-2">
+          <p className="text-xs leading-10 text-gray-300 mb-10">
             The Weekend is a Canadian singer and songwriter
             known for his unique style and emotional music.
             He mixes styles like R&B, pop, and electronic music.
