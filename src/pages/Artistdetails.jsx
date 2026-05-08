@@ -1,11 +1,11 @@
 import image2 from "../assets/weekend.png";
 export const Artistdetails = () => {
   return (
-    <div className="bg-white min-h-screen p-6 flex justify-center items-center">
+    <div className="min-h-screen p-10 flex justify-center items-center ">
 
-      <div className="border-4 border-[#0D1B3D] rounded-2xl p-2 w-full max-w-md">
+      <div className="border-4 border-[#0D1B3D] rounded-2xl p-2 w-200 h-150 hover:scale-105 transition duration-1000 ">
 
-        <div className="bg-[#0D1B3D] rounded-2xl p-6 text-white h-[500px] relative">
+        <div className="bg-[#0D1B3D] rounded-2xl p-6 text-white h-140 relative ">
 
           <div className="flex items-start gap-6">
 
@@ -32,9 +32,9 @@ export const Artistdetails = () => {
             </div>
           </div>
 
-          <div className="bg-yellow-400 text-black rounded-full px-8 py-6 w-[260px] absolute bottom-10 left-1/2 -translate-x-1/2">
+          <div className="bg-yellow-400 text-white  rounded-[50px] px-10 py-10 w-100 absolute mt-15 ml-40 hover:scale-140 transition duration-2000 ">
 
-            <p className="text-sm text-center font-medium leading-6">
+            <p className="text-sm text-center font-bold leading-10">
               The Weeknd is a Canadian singer and songwriter
               known for his unique voice and emotional music.
               He mixes styles like R&B, pop, and electronic music.

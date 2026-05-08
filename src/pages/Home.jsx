@@ -6,16 +6,18 @@ export const Home = () => {
 <div >
 
 
-        <div className=" rounded-xl flex justify-center items-center">
+        <div className=" rounded-xl flex justify-center items-center ">
             <img src={image} alt="Mawazine Festival" className="w-full h-150  "/>
            
-          <div className=" rounded-[20px]  absolute  bg-[#fce10e72] w-300  h-105 flex items-center justify-center " >
+          <div className=" rounded-[20px]  absolute  bg-[#fce10e72] w-300  h-110 flex items-center justify-center " >
              <div className="flex flex-col items-center gap-6 ">
             <h1 className="text-white text-4xl font-serif font-bold flex items">
              🎵 MAWAZINE
             </h1>
-             <p className="text-2xl ">June 19 - 27, 2026</p>
-            <p className="text-2xl">Rabat, Morocco</p>
+            <div className="mt-50">
+             <p className="text-2xl ">June 19 - 27, 2026 .Rabat, Morocco</p>
+             </div>
+            
             </div>
           </div>
     
