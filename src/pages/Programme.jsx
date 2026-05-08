@@ -28,7 +28,7 @@ export const Programme = () => {
 
       </div>
 
-      <div className="bg-yellow-400 text-center py-2 rounded mb-12">
+      <div className="bg-yellow-400 text-center py-2 rounded mb-12 ">
         All Artists
       </div>
 
