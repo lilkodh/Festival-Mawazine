@@ -2,9 +2,9 @@ import image2 from "../assets/weekend.png";
 
 export const Programme = () => {
   return (
-    <div className="bg-white min-h-screen p-4">
+    <div className=" min-h-screen p-4">
 
-      <h1 className="text-3xl font-bold text-center mb-10">
+      <h1 className="text-3xl font-bold text-center mb-11 ">
         Select a Day !
       </h1>
 
@@ -28,7 +28,7 @@ export const Programme = () => {
 
       </div>
 
-      <div className="bg-yellow-400 text-center py-2 rounded mb-12 font-medium max-w-md mx-auto">
+      <div className="bg-yellow-400 text-center py-2 rounded mb-12">
         All Artists
       </div>
 

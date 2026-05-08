@@ -3,7 +3,7 @@ import image2 from "../assets/weekend.png";
 import image3 from "../assets/week.webp";
 export const Home = () => {
     return(
-<div className="">
+<div >
 
 
         <div className=" rounded-xl flex justify-center items-center">
