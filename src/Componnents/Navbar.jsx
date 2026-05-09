@@ -6,7 +6,6 @@ export const Navbar =()=>{
                 <li><NavLink to="/" className={({isActive}) => isActive ? " border-amber-300 bg-amber-300 rounded-4xl p-2.5" : "hover:text-yellow-400" } >Home</NavLink></li>
                 <li><NavLink to="/programme"className={({isActive}) => isActive ? " border-amber-300 bg-amber-300 rounded-4xl p-2.5" : "hover:text-yellow-400" } >Programme</NavLink></li>
                 <li><NavLink to="/planning" className={({isActive}) => isActive ? " border-amber-300 bg-amber-300 rounded-4xl p-2.5" : "hover:text-yellow-400" }  >Planning</NavLink></li>
-                <li><NavLink to="/artistdetails" className={({isActive}) => isActive ? " border-amber-300 bg-amber-300 rounded-4xl p-2.5" : "hover:text-yellow-400" }  >Artistdetails</NavLink></li>
                 <li><NavLink to="/passport"className={({isActive}) => isActive ? " border-amber-300 bg-amber-300 rounded-4xl p-2.5" : "hover:text-yellow-400" }  >Passport</NavLink></li>
             </ul>
         </nav>

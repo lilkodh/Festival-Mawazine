@@ -40,7 +40,7 @@ export const Home = () => {
               </div>
 
               <div className="font-[Aboreto] text-[#e5b84b] text-4xl gap-10 ">
-                <h3 className="mb-10 underline ">The WeeKand</h3>
+                <h3 className="mb-10 ">Chris Brown</h3>
                 <p >
                   <span className="text-gray-100">⏱</span> 21:30
                 </p>

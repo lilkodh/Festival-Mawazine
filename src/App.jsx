@@ -7,7 +7,7 @@ import { Artistdetails} from "./pages/Artistdetails";
 import { Passport } from "./pages/Passport";
 import { Layout } from "./Componnents/Layout";
 function App() {
-
+const[passport,setPassport] = useState([])
     const [planning,setPlanning] = useState(JSON.parse(localStorage.getItem("planning")))
 
   useEffect(
@@ -23,7 +23,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="programme" element={<Programme planning = {planning} setPlanning = {setPlanning}/>} />
         <Route path="planning" element={<Planning planning = {planning} setPlanning = {setPlanning}/>} />
-        <Route path="artistdetails" element={<Artistdetails />} />
+        <Route path="programme/:artistId" element={<Artistdetails />} />
         <Route path="passport" element={<Passport />} />
       </Route>
     </Routes>

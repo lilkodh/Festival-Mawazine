@@ -1,23 +1,25 @@
-import image2 from "../assets/chrisbrown.jpg";
 import { artists } from "../Data/Artistsdata";
+import { Link } from "react-router-dom";
 
-export const Programme = ({planning,setPlanning}) => {
-const addToPlanning = (artist,planing) => {
-  setPlanning(previousPlanning => [
-    ...previousPlanning,
-    artist
-  ])
-}
+export const Programme = ({ planning, setPlanning }) => {
+
+  const addToPlanning = (artist) => {
+    setPlanning(previousPlanning => [
+      ...previousPlanning,
+      artist
+    ])
+  }
+
   return (
-    <div className=" min-h-screen p-4 ">
+    <div className="min-h-screen p-4">
 
-      <h1 className="text-3xl font-bold text-center mb-11 ">
+      <h1 className="text-3xl font-bold text-center mb-11">
         Select a Day !
       </h1>
 
       <div className="flex justify-center gap-20 mb-15">
 
-        <button className="border border-[#0D1B3D] rounde px-3 py-1 text-center leading-4 hover:bg-yellow-400 duration-1000 ">
+        <button className="border border-[#0D1B3D] px-3 py-1 text-center leading-4 hover:bg-yellow-400 transition duration-500">
           19 <br /> Jun
         </button>
 
@@ -35,43 +37,59 @@ const addToPlanning = (artist,planing) => {
 
       </div>
 
-      <div className="bg-yellow-400 text-center py-2 rounded mb-12 ">
+      <div className="bg-yellow-400 text-center py-2 rounded mb-12">
         All Artists
       </div>
 
-    
-      <div className="flex justify-center gap-20 flex-wrap ">
+      <div className="flex justify-center gap-20 flex-wrap">
 
-        {artists.map(artist => 
-        <div className="bg-[#0D1B3D] w-56 h-80 rounded-3xl p-6 text-center text-white relative hover:scale-140 transition duration-2000  h-100">
+        {artists.map((artist) => (
+          
 
-          <img
-            src={artist.image}
-            alt="artist"
-            className="w-24 h-24 rounded-full border-4 border-yellow-400 mx-auto mb-4 hover:scale-150 transition duration-1000"
-          />
+          <div
+            
+          
+          key={artist.id}
+            className="bg-[#0D1B3D] w-56 h-100 rounded-3xl p-6 text-center text-white relative hover:scale-130 transition duration-1000"
+          >
 
-          <h2 className="text-yellow-400 text-xl font-bold">
-         {artist.name}
-          </h2>
+            <img
+              src={artist.image}
+              alt={artist.name}
+              className="w-24 h-24 rounded-full border-4 border-yellow-400 mx-auto mb-4 hover:scale-200 transition duration-1500"
+            />
 
-          <p className="mt-4 text-lg">
-           {artist.time}
+            <h2 className="text-yellow-400 text-xl font-bold">
+              {artist.name}
+            </h2>
+            
 
-          </p>
+            <p className="mt-4 text-lg">
+              {artist.time}
+            </p>
 
-          <p className="text-sm mt-3">
-           {artist.location}
-          </p>
-  <button className="bg-yellow-400 text-white w-10 h-10 rounded-full absolute -bottom-5 left-1/2 -translate-x-1/2 text-2xl hover:bg-green-500 transition duration-500" onClick={() => addToPlanning(artist)} >
-            +
-          </button>
-        </div>
-        )}
-        
-        </div>
+            <p className="text-sm mt-3 mb-6">
+              {artist.location}
+            </p>
+             <Link to={`/programme/${artist.id}`}>
+              <button className="border-2 rounded-2xl p-2 bg-amber-400 hover:bg-amber-500 scale-100 duration-100">View More</button>
+
+            </Link>
+            
+
+            <button
+              className="bg-yellow-400 text-white w-10 h-10 rounded-full absolute -bottom-5 left-1/2 -translate-x-1/2 text-2xl hover:bg-green-500 transition duration-500"
+              onClick={() => addToPlanning(artist)}
+            >
+              +
+            </button>
+
+          </div>
+
+        ))}
 
       </div>
-   
+
+    </div>
   );
 };

@@ -1,5 +1,13 @@
-import image2 from "../assets/chrisbrown.jpg";
+
+import { useParams } from "react-router-dom";
+import { artists } from "../Data/Artistsdata";
 export const Artistdetails = () => {
+  
+  const {artistId} = useParams()
+  
+  const artist = artists.find(
+        (artist) => artist.id === Number(artistId)
+  )
   return (
     <div className="min-h-screen p-10 flex justify-center items-center ">
 
@@ -10,7 +18,7 @@ export const Artistdetails = () => {
           <div className="flex items-start gap-6 " >
 
             <img
-              src={image2}
+              src={artist.image}
               alt="artist"
               className="w-28 h-28 rounded-full border-4 border-yellow-400 hover:scale-200 transition duration-2000"
             />
@@ -18,15 +26,15 @@ export const Artistdetails = () => {
             <div className="mt-4">
 
               <h1 className="text-4xl font-bold mb-8">
-                The Weeknd
+                {artist.name}
               </h1>
 
               <p className="mb-6 text-lg">
-                📍 Olm Souissi
+               {artist.location}
               </p>
 
               <p className="text-2xl">
-                ⏱ 21:30
+                {artist.time}
               </p>
 
             </div>
@@ -35,9 +43,7 @@ export const Artistdetails = () => {
           <div className="bg-yellow-400 text-white  rounded-[50px] px-10 py-10 w-100 absolute mt-15 ml-40 hover:scale-140 transition duration-2000 ">
 
             <p className="text-sm text-center font-bold leading-10">
-              The Weeknd is a Canadian singer and songwriter
-              known for his unique voice and emotional music.
-              He mixes styles like R&B, pop, and electronic music.
+             {artist.description}
             </p>
 
           </div>

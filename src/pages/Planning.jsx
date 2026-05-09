@@ -10,7 +10,11 @@ export const Planning = ({planning,setPlanning}) => {
     console.log(removefromPlanning)
   }
   return (
+    
+    
     <div className="flex justify-center gap-20 flex-wrap mt-30">
+    
+   
 
   {planning.map((artist) => (
 
