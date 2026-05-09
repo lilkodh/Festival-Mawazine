@@ -1,6 +1,6 @@
 import image from "../assets/how.png";
-import image2 from "../assets/weekend.png";
-import image3 from "../assets/week.webp";
+import image2 from "../assets/chrisbrown.jpg";
+import image3 from "../assets/chrisbrown.jpg";
 export const Home = () => {
     return(
 <div >

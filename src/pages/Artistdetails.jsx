@@ -1,18 +1,18 @@
-import image2 from "../assets/weekend.png";
+import image2 from "../assets/chrisbrown.jpg";
 export const Artistdetails = () => {
   return (
     <div className="min-h-screen p-10 flex justify-center items-center ">
 
-      <div className="border-4 border-[#0D1B3D] rounded-2xl p-2 w-200 h-150 hover:scale-105 transition duration-1000 ">
+      <div className="border-4 border-[#0D1B3D] rounded-2xl p-2 w-200 h-150  ">
 
         <div className="bg-[#0D1B3D] rounded-2xl p-6 text-white h-140 relative ">
 
-          <div className="flex items-start gap-6">
+          <div className="flex items-start gap-6 " >
 
             <img
               src={image2}
               alt="artist"
-              className="w-28 h-28 rounded-full border-4 border-yellow-400"
+              className="w-28 h-28 rounded-full border-4 border-yellow-400 hover:scale-200 transition duration-2000"
             />
 
             <div className="mt-4">

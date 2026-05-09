@@ -1,16 +1,16 @@
-import image2 from "../assets/weekend.png";
+import image2 from "../assets/chrisbrown.jpg";
 
 export const Programme = () => {
   return (
-    <div className=" min-h-screen p-4">
+    <div className=" min-h-screen p-4 ">
 
       <h1 className="text-3xl font-bold text-center mb-11 ">
         Select a Day !
       </h1>
 
-      <div className="flex justify-center gap-8 mb-10">
+      <div className="flex justify-center gap-20 mb-15">
 
-        <button className="border border-[#0D1B3D] px-3 py-1 text-center leading-4 hover:bg-yellow-400 transition duration-500">
+        <button className="border border-[#0D1B3D] rounde px-3 py-1 text-center leading-4 hover:bg-yellow-400 duration-1000 ">
           19 <br /> Jun
         </button>
 
@@ -33,15 +33,15 @@ export const Programme = () => {
       </div>
 
     
-      <div className="flex justify-center gap-10 flex-wrap">
+      <div className="flex justify-center gap-20 flex-wrap ">
 
       
-        <div className="bg-[#0D1B3D] w-56 h-80 rounded-3xl p-6 text-center text-white relative hover:scale-105 transition duration-500 cursor-pointer shadow-lg">
+        <div className="bg-[#0D1B3D] w-56 h-80 rounded-3xl p-6 text-center text-white relative hover:scale-140 transition duration-2000 h-100">
 
           <img
             src={image2}
             alt="artist"
-            className="w-24 h-24 rounded-full border-4 border-yellow-400 mx-auto mb-4"
+            className="w-24 h-24 rounded-full border-4 border-yellow-400 mx-auto mb-4 hover:scale-200 transition duration-2000"
           />
 
           <h2 className="text-yellow-400 text-xl font-bold">
@@ -54,16 +54,16 @@ export const Programme = () => {
             📍 OLM SOUISSI
           </p>
 
-          <button className="bg-yellow-400 text-white w-10 h-10 rounded-full absolute -bottom-5 left-1/2 -translate-x-1/2 text-2xl hover:bg-yellow-300 transition duration-500">
+          <button className="bg-yellow-400 text-white w-10 h-10 rounded-full absolute -bottom-5 left-1/2 -translate-x-1/2 text-2xl hover:bg-green-500 transition duration-500">
             +
           </button>
         </div>
-        <div className="bg-[#0D1B3D] w-56 h-80 rounded-3xl p-6 text-center text-white relative hover:scale-105 transition duration-500 cursor-pointer shadow-lg">
+        <div className="bg-[#0D1B3D] w-56 h-80 rounded-3xl p-6 text-center text-white relative hover:scale-140 transition duration-2000  h-100">
 
           <img
             src={image2}
             alt="artist"
-            className="w-24 h-24 rounded-full border-4 border-yellow-400 mx-auto mb-4"
+            className="w-24 h-24 rounded-full border-4 border-yellow-400 mx-auto mb-4 hover:scale-150 transition duration-1000"
           />
 
           <h2 className="text-yellow-400 text-xl font-bold">
@@ -76,16 +76,16 @@ export const Programme = () => {
             📍 Nahdda
           </p>
 
-          <button className="bg-yellow-400 text-white w-10 h-10 rounded-full absolute -bottom-5 left-1/2 -translate-x-1/2 text-2xl hover:bg-yellow-300 transition duration-500">
+          <button className="bg-yellow-400 text-white w-10 h-10 rounded-full absolute -bottom-5 left-1/2 -translate-x-1/2 text-2xl hover:bg-green-500 transition duration-500">
             +
           </button>
         </div>
-        <div className="bg-[#0D1B3D] w-56 h-80 rounded-3xl p-6 text-center text-white relative hover:scale-105 transition duration-500 cursor-pointer shadow-lg">
+        <div className="bg-[#0D1B3D] w-56 h-80 rounded-3xl p-6 text-center text-white relative hover:scale-140 transition duration-2000  h-100">
 
           <img
             src={image2}
             alt="artist"
-            className="w-24 h-24 rounded-full border-4 border-yellow-400 mx-auto mb-4"
+            className="w-24 h-24 rounded-full border-4 border-yellow-400 mx-auto mb-4 hover:scale-200 transition duration-2000"
           />
 
           <h2 className="text-yellow-400 text-xl font-bold">
@@ -98,7 +98,7 @@ export const Programme = () => {
             📍 OLM SOUISSI
           </p>
 
-          <button className="bg-yellow-400 text-white w-10 h-10 rounded-full absolute -bottom-5 left-1/2 -translate-x-1/2 text-2xl hover:bg-yellow-300 transition duration-500">
+          <button className="bg-yellow-400 text-white w-10 h-10 rounded-full absolute -bottom-5 left-1/2 -translate-x-1/2 text-2xl hover:bg-green-500 transition duration-500">
             +
           </button>
         </div>

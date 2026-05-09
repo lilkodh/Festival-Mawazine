@@ -1,11 +1,11 @@
-import image2 from "../assets/weekend.png";
+import image2 from "../assets/chrisbrown.jpg";
 
 export const Passport = () => {
   return (
-    <div className="bg-white min-h-screen p-4">
+    <div className=" min-h-screen">
 
 
-      <div className="bg-yellow-400 w-80 rounded mb-10 py-2">
+      <div className="bg-yellow-400 w-150 rounded mb-10 mr-30 mt-10">
         <h1 className="text-3xl font-bold text-center">
           My Passport
         </h1>
