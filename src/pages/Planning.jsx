@@ -1,6 +1,14 @@
-
+import image2 from "../assets/chrisbrown.jpg";
 import { artists } from "../Data/Artistsdata";
-export const Planning = ({planning}) => {
+
+
+export const Planning = ({planning,setPlanning}) => {
+
+  const removefromPlanning = (id) => {
+
+    setPlanning( planning.filter(artist => artist.id !== id ))
+    console.log(removefromPlanning)
+  }
   return (
     <div className="flex justify-center gap-20 flex-wrap mt-30">
 
@@ -19,10 +27,11 @@ export const Planning = ({planning}) => {
 
       <img
         src={artist.image}
+        alt={artist.name}
         className="w-24 h-24 rounded-full border-4 border-yellow-400 mx-auto mt-16"
       />
 
-      <button className="bg-yellow-400 w-40 py-2 rounded-full absolute bottom-6 left-1/2 -translate-x-1/2 font-bold hover:bg-red-700 transition duration-500">
+      <button className="bg-yellow-400 w-40 py-2 rounded-full absolute bottom-6 left-1/2 -translate-x-1/2 font-bold hover:bg-red-700 transition duration-500" onClick={() => removefromPlanning(artist.id)} >
         -REMOVE
       </button>
 
