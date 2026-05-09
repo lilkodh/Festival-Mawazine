@@ -1,6 +1,13 @@
 import image2 from "../assets/chrisbrown.jpg";
+import { artists } from "../Data/Artistsdata";
 
-export const Programme = () => {
+export const Programme = ({planning,setPlanning}) => {
+const addToPlanning = (artist,planing) => {
+  setPlanning(previousPlanning => [
+    ...previousPlanning,
+    artist
+  ])
+}
   return (
     <div className=" min-h-screen p-4 ">
 
@@ -35,75 +42,36 @@ export const Programme = () => {
     
       <div className="flex justify-center gap-20 flex-wrap ">
 
-      
-        <div className="bg-[#0D1B3D] w-56 h-80 rounded-3xl p-6 text-center text-white relative hover:scale-140 transition duration-2000 h-100">
-
-          <img
-            src={image2}
-            alt="artist"
-            className="w-24 h-24 rounded-full border-4 border-yellow-400 mx-auto mb-4 hover:scale-200 transition duration-2000"
-          />
-
-          <h2 className="text-yellow-400 text-xl font-bold">
-            Dua Lipa
-          </h2>
-
-          <p className="mt-4 text-lg">21:30</p>
-
-          <p className="text-sm mt-3">
-            📍 OLM SOUISSI
-          </p>
-
-          <button className="bg-yellow-400 text-white w-10 h-10 rounded-full absolute -bottom-5 left-1/2 -translate-x-1/2 text-2xl hover:bg-green-500 transition duration-500">
-            +
-          </button>
-        </div>
+        {artists.map(artist => 
         <div className="bg-[#0D1B3D] w-56 h-80 rounded-3xl p-6 text-center text-white relative hover:scale-140 transition duration-2000  h-100">
 
           <img
-            src={image2}
+            src={artist.image}
             alt="artist"
             className="w-24 h-24 rounded-full border-4 border-yellow-400 mx-auto mb-4 hover:scale-150 transition duration-1000"
           />
 
           <h2 className="text-yellow-400 text-xl font-bold">
-            Nianho
+         {artist.name}
           </h2>
 
-          <p className="mt-4 text-lg">20:10</p>
+          <p className="mt-4 text-lg">
+           {artist.time}
 
-          <p className="text-sm mt-3">
-            📍 Nahdda
           </p>
 
-          <button className="bg-yellow-400 text-white w-10 h-10 rounded-full absolute -bottom-5 left-1/2 -translate-x-1/2 text-2xl hover:bg-green-500 transition duration-500">
+          <p className="text-sm mt-3">
+           {artist.location}
+          </p>
+  <button className="bg-yellow-400 text-white w-10 h-10 rounded-full absolute -bottom-5 left-1/2 -translate-x-1/2 text-2xl hover:bg-green-500 transition duration-500" onClick={() => addToPlanning(artist)} >
             +
           </button>
         </div>
-        <div className="bg-[#0D1B3D] w-56 h-80 rounded-3xl p-6 text-center text-white relative hover:scale-140 transition duration-2000  h-100">
-
-          <img
-            src={image2}
-            alt="artist"
-            className="w-24 h-24 rounded-full border-4 border-yellow-400 mx-auto mb-4 hover:scale-200 transition duration-2000"
-          />
-
-          <h2 className="text-yellow-400 text-xl font-bold">
-            TOTO
-          </h2>
-
-          <p className="mt-4 text-lg">20:10</p>
-
-          <p className="text-sm mt-3">
-            📍 OLM SOUISSI
-          </p>
-
-          <button className="bg-yellow-400 text-white w-10 h-10 rounded-full absolute -bottom-5 left-1/2 -translate-x-1/2 text-2xl hover:bg-green-500 transition duration-500">
-            +
-          </button>
+        )}
+        
         </div>
 
       </div>
-    </div>
+   
   );
 };

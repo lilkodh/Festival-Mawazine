@@ -5,7 +5,6 @@ export const Home = () => {
     return(
 <div >
 
-
         <div className=" rounded-xl flex justify-center items-center ">
             <img src={image} alt="Mawazine Festival" className="w-full h-150  "/>
            
