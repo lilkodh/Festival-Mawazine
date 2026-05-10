@@ -1,6 +1,6 @@
 import image2 from "../assets/chrisbrown.jpg";
 
-export const Passport = () => {
+export const Passport = ({passport}) => {
   return (
     <div className=" min-h-screen">
 
@@ -13,83 +13,36 @@ export const Passport = () => {
 
 
       <div className="border-4 border-[#0D1B3D] p-6 space-y-8">
-
+  {passport.map((artist)=> (
 
         <div className="bg-[#0D1B3D] rounded-3xl px-6 py-6 flex items-center justify-between text-white hover:scale-105 transition duration-500 shadow-xl">
 
-  
           <div className="flex items-center gap-4">
-
+key={artist.id}
             <img
-              src={image2}
+              src={artist.image}
               alt="artist"
               className="w-12 h-12 rounded-full border-4 border-yellow-400"
             />
 
             <h2 className="text-2xl font-semibold">
-              The Weekand
+              {artist.name}
             </h2>
           </div>
 
         
           <p className="text-xl">
-            21:30
+            {artist.time}
           </p>
           <p className="text-green-400 text-xl font-bold">
             Attented
           </p>
         </div>
-
-        <div className="bg-[#0D1B3D] rounded-3xl px-6 py-6 flex items-center justify-between text-white hover:scale-105 transition duration-500 shadow-xl">
-
-          <div className="flex items-center gap-4">
-
-            <img
-              src={image2}
-              alt="artist"
-              className="w-12 h-12 rounded-full border-4 border-yellow-400"
-            />
-
-            <h2 className="text-2xl font-semibold">
-              The Weekand
-            </h2>
-          </div>
-
-          <p className="text-xl">
-            21:30
-          </p>
-
-          <p className="text-green-400 text-xl font-bold">
-            Attented
-          </p>
-        </div>
-
-        <div className="bg-[#0D1B3D] rounded-3xl px-6 py-6 flex items-center justify-between text-white hover:scale-105 transition duration-500 shadow-xl">
-
-          <div className="flex items-center gap-4">
-
-            <img
-              src={image2}
-              alt="artist"
-              className="w-12 h-12 rounded-full border-4 border-yellow-400"
-            />
-
-            <h2 className="text-2xl font-semibold">
-              The Weekand
-            </h2>
-          </div>
-
-          <p className="text-xl">
-            21:30
-          </p>
-
-          <p className="text-green-400 text-xl font-bold">
-            Attented
-          </p>
-          
-        </div>
-
+      
+  ))}
       </div>
+   
     </div>
+    
   );
 };
