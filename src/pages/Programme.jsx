@@ -1,12 +1,12 @@
 import { artists } from "../Data/Artistsdata";
 import { Link } from "react-router-dom";
 
-export const Programme = ({ planning, setPlanning }) => {
+export const Programme = ({planning,setPlanning}) => {
 
-  const addToPlanning = (artist) => {
+  const addToPlanning = (oneofartist) => {
     setPlanning(previousPlanning => [
       ...previousPlanning,
-      artist
+      oneofartist
     ])
   }
 
@@ -43,35 +43,35 @@ export const Programme = ({ planning, setPlanning }) => {
 
       <div className="flex justify-center gap-20 flex-wrap">
 
-        {artists.map((artist) => (
+        {artists.map((oneofartist) => (
           
 
           <div
             
           
-          key={artist.id}
+          key={oneofartist.id}
             className="bg-[#0D1B3D] w-56 h-100 rounded-3xl p-6 text-center text-white relative hover:scale-130 transition duration-1000"
           >
 
             <img
-              src={artist.image}
-              alt={artist.name}
+              src={oneofartist.image}
+              alt={oneofartist.name}
               className="w-24 h-24 rounded-full border-4 border-yellow-400 mx-auto mb-4 hover:scale-200 transition duration-1500"
             />
 
             <h2 className="text-yellow-400 text-xl font-bold">
-              {artist.name}
+              {oneofartist.name}
             </h2>
             
 
             <p className="mt-4 text-lg">
-              {artist.time}
+              {oneofartist.time}
             </p>
 
             <p className="text-sm mt-3 mb-6">
-              {artist.location}
+              {oneofartist.location}
             </p>
-             <Link to={`/programme/${artist.id}`}>
+             <Link to={`/programme/${oneofartist.id}`}>
               <button className="border-2 rounded-2xl p-2 bg-amber-400 hover:bg-amber-500 scale-100 duration-100">View More</button>
 
             </Link>
@@ -79,7 +79,7 @@ export const Programme = ({ planning, setPlanning }) => {
 
             <button
               className="bg-yellow-400 text-white w-10 h-10 rounded-full absolute -bottom-5 left-1/2 -translate-x-1/2 text-2xl hover:bg-green-500 transition duration-500"
-              onClick={() => addToPlanning(artist)}
+              onClick={() => addToPlanning(oneofartist)}
             >
               +
             </button>

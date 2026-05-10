@@ -7,15 +7,16 @@ import { Artistdetails} from "./pages/Artistdetails";
 import { Passport } from "./pages/Passport";
 import { Layout } from "./Componnents/Layout";
 function App() {
-const[passport,setPassport] = useState([])
-    const [planning,setPlanning] = useState(JSON.parse(localStorage.getItem("planning")))
+
+    const [planning, setPlanning] = useState(
+  JSON.parse(localStorage.getItem("planning")) || [] 
+)
 
   useEffect(
 () => {
   localStorage.setItem("planning",JSON.stringify (planning))
 }, [planning]
 )
-
 
   return (
     <Routes>

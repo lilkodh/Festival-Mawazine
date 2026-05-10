@@ -7,16 +7,25 @@ export const Planning = ({planning,setPlanning}) => {
   const removefromPlanning = (id) => {
 
     setPlanning( planning.filter(artist => artist.id !== id ))
-    console.log(removefromPlanning)
+    
   }
   return (
     
     
-    <div className="flex justify-center gap-20 flex-wrap mt-30">
-    
-   
+    <div className="min-h-screen ">
+
+      <div className="mt-10">
+     <div className="bg-yellow-400 w-150 rounded p-1">
+        <h1 className="text-3xl font-bold text-center">
+          My Planning
+        </h1>
+      </div>
+      </div>
+
+   <div className="flex justify-center items-center  gap-10 mt-10">
 
   {planning.map((artist) => (
+    
 
     <div
       key={artist.id}
@@ -31,17 +40,18 @@ export const Planning = ({planning,setPlanning}) => {
 
       <img
         src={artist.image}
-        alt={artist.name}
+     
         className="w-24 h-24 rounded-full border-4 border-yellow-400 mx-auto mt-16"
       />
 
       <button className="bg-yellow-400 w-40 py-2 rounded-full absolute bottom-6 left-1/2 -translate-x-1/2 font-bold hover:bg-red-700 transition duration-500" onClick={() => removefromPlanning(artist.id)} >
         -REMOVE
       </button>
-
+      
     </div>
 
   ))}
+  </div>
 
 </div>
   );

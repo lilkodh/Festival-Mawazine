@@ -2,12 +2,13 @@
 import { useParams } from "react-router-dom";
 import { artists } from "../Data/Artistsdata";
 export const Artistdetails = () => {
-  
+ 
   const {artistId} = useParams()
   
   const artist = artists.find(
         (artist) => artist.id === Number(artistId)
   )
+  
   return (
     <div className="min-h-screen p-10 flex justify-center items-center ">
 
@@ -45,11 +46,13 @@ export const Artistdetails = () => {
             <p className="text-sm text-center font-bold leading-10">
              {artist.description}
             </p>
+            <button className="border-2 bg-amber-50"> I was There </button>
 
           </div>
 
         </div>
       </div>
+      
     </div>
   );
 };
